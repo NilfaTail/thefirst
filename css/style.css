@@ -160,9 +160,19 @@ h2, h3 {
 	margin-left: 10px;
 }
 
+.content ul.cat > li {
+	list-style-image: url('../img/ico/stock_mail_filters_apply.png');
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+}
 
-
-
+.content ul.cat li ul.subcat li {
+	list-style: disc;
+	font-size: 14px;
+	font-weight: normal;
+}
+ 
 
 
 
