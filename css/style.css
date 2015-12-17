@@ -210,12 +210,11 @@ li.new:after {
 .gallery-item  img {
 	height: 200px;
 	max-width: 210px;
-	border: 4px solid #393939;
+	outline: 4px solid #393939;
 }
 
 .gallery-item  a:hover img {
-	
-	border: 4px solid transparent;
+	outline: none;
 }
 
 form.registration fieldset > div {
