@@ -45,63 +45,73 @@
 					
 					<p>Заполните анкету любимого пользователя, и мы ответим на любой Ваш вопрос по html.</p>
 					
-					<form method="post" action="#">
+					<form class="registration" method="post" action="#">
 						<fieldset>
 						
 							<legend><b>Анкета любимого посетителя</b></legend>
 							
-							<div style="margin: 10px 0;">
+							<div>
 								<label>Фамилия: </label><br>
-								<input type="text" size="50" placeholder="Иванов">
+								<input type="text" class="fio" placeholder="Иванов">
 							</div>
 							
-							<div style="margin: 10px 0;">
+							<div>
 								<label>Имя: </label><br>
-								<input type="text" size="50" placeholder="Иван">
+								<input type="text" class="fio" placeholder="Иван">
 							</div>
 							
-							<div style="margin: 10px 0;">
+							<div>
 								<label>Отчество: </label><br>
-								<input type="text" size="50" placeholder="Иванович">
+								<input type="text" class="fio" placeholder="Иванович">
 							</div>
 							
-							<div style="margin: 10px 0;">
+							<div>
 								<label>Ваш пол: </label><br>
 								
-								<label>
+								<label class="border-check">
 									<input type="radio" name="sex" value="0"> Мужской
+								</label>
+								<label class="border-check">
 									<input type="radio" name="sex" value="1"> Женский
+								</label>
+								<label class="border-check">
 									<input type="radio" name="sex" value="2"> Не определен
 								</label>
 							</div>
 							
-							<div style="margin: 10px 0;">
+							<div>
 								<label>Дата рождения: </label><br>
 								<input type="date" size="50">
 							</div>					
 							
-							<div style="margin: 10px 0;">
+							<div>
 								<label>Добавьте свое фото: </label><br>
-								<input type="file" size="50" placeholder="Добавить файл...">
+								<input type="file"placeholder="Добавить файл...">
 							</div>
 							
-							<div style="margin: 20px 0 10px 0;">
+							<div>
 								<label>E-mail: </label><br>
-								<input type="emaill" size="50" placeholder="test@test.ru">
+								<input type="email" placeholder="test@test.ru">
 							</div>
 							
-							<div style="margin: 10px 0;">
+							<div>
 								<label>Ваш сайт: </label><br>
-								<input type="emaill" size="50" placeholder="http://www.test.ru">
+								<input type="text" value="http://">
 							</div>
 
 							<div style="margin: 10px 0;">
 								<label>Какие навыки вы хотите получить? </label><br>
 								
-								<label>
-									<input type="checkbox" name="skill" value="0"> HTML/CSS <br>
-									<input type="checkbox" name="skill" value="1"> Javascript <br>
-									<input type="checkbox" name="skill" value="2"> Jquery <br>
+								<label class="border-check">
+									<input type="checkbox" name="skill" value="0"> HTML/CSS
+								</label>
+								<label class="border-check">
+									<input type="checkbox" name="skill" value="1"> Javascript
+								</label>
+								<label class="border-check">	
+									<input type="checkbox" name="skill" value="2"> Jquery
+								</label>
+								<label class="border-check">
 									<input type="checkbox" name="skill" value="3"> PHP
 								</label>
 							</div>
@@ -111,14 +121,14 @@
 								<textarea name="about" rows="10" cols="51"></textarea>
 							</div>
 							
-							<div style="margin: 10px 0;">
+							<div>
 								<label>Придумайте пароль: </label><br>
-								<input type="password" size="50">
+								<input type="password">
 							</div>
 							
-							<div style="margin: 10px 0;">
+							<div>
 								<label>Подтвердите пароль: </label><br>
-								<input type="password" size="50">
+								<input type="password">
 							</div>
 							
 							<div style="margin: 10px 0;">
