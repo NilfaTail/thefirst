@@ -300,14 +300,11 @@ form.registration  input[type="reset"]:active {
 	padding: 0;
 }
 
-table.casual tr td {
-	width: 200px;
-}
-
 table {
 	margin: 10px;
-	border: 1px solid #000;
-	border-collapse: collapse;
+    border: 1px solid #393939;
+    border-collapse: collapse;
+    border-spacing: 0px;
 }
 
 caption {
@@ -316,27 +313,43 @@ caption {
 	text-align: left;
 }
 
-tr td {
-	border: 1px solid #000;
-	padding: 4px 6px;
+td {
+	border: 1px solid #393939;
+	padding: 4px;
 }
 
-.registration table {
-
+.registration tr:hover td{
+	background: beige;
 }
 
-.registration table tr td {
-	width: 100px
+table.ex-1 td {
+	width: 150px;
 }
 
-label[for="last-name"]:hover {
-	color: red;
+table.ex-1 td.long {
+	width: 309px;
+}
+
+
+table.insite {
+	margin: 0 auto;
+}
+
+table.insite  td {
+	width: 60px;
+	background: #768473;
+	color: #fff;
+}
+
+td.btn {
+	text-align: center;
 }
 
 
 
-
-
+label.last-name:hover td {
+	background: green;
+}
 
 
 
