@@ -1,166 +1,41 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		<title>Главная</title>
-	</head>
-	
-	<body>
-		
-		<div class="wrap-main">
-			<div class="container ">
-			
-				<div class="header">
-					<a href="index.html" title="">Новый сайт</a>
-				</div>
-			
-				<div class="breadcrumbs">
-					<p>
-						Вы здесь: <i>Главная</i>
-					</p>
-				</div>
-				
-				<div class="main-menu">
-					<ul>
-						<li>
-							<a href="articles.html" title="Статьи">Статьи</a>
-						</li>
-						<li>
-							<a href="catalog.html" title="Каталог">Каталог</a>
-						</li>
-						<li>
-							<a href="gallery.html" title="Галерея изображений">Галерея изображений</a>
-						</li>
-						<li>
-							<a href="registration.html" title="Регистрация">Регистрация</a>
-						</li>
-						<li>
-							<a href="contacts.html" title="Контакты">Контакты</a>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="content">
-					<h1>Разбор урока с таблицами</h1>
-					
-					<table class="ex-1">
-						<caption>Пример таблицы 1</caption>
-						<tbody>
-							<tr>
-								<td rowspan="3">1</td>
-								<td>2</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td colspan="2">5</td>
-							</tr>
-							<tr>
-								<td>8</td>
-								<td>9</td>
-							</tr>
-						</tbody>
-					</table>
-					
-					<table class="ex-1">
-						<caption>Пример таблицы 2</caption>
-						<tbody>
-							<tr>
-								<td colspan="2" class="long">1</td>
-								<td>3</td>
-							</tr>
-							
-							<tr>
-								<td>4</td>
-								<td colspan="2" rowspan="2">
-								
-									<table class="insite">
-										<tbody>
-											<tr>
-												<td>1</td>
-												<td rowspan="3">2</td>
-												<td rowspan="2">3</td>
-											</tr>
-											<tr>
-												<td rowspan="2">4</td>
-											</tr>
-											<tr>
-												<td>9</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-														<tr>
-								<td>7</td>
-							</tr>
-						</tbody>
-					</table>
-					
-					
-					<form class="main registration" method="post" action="#">
-						<fieldset>
-							<table>
-								<caption>Регистрация</caption>
-									<tr>
-										<td>
-											<label for="last-name">
-												Фамилия:
-											</label>
-										</td>
-										<td>
-											<input id="last-name" name="last-name" type="text" class="fio" placeholder="Иванов" autofocus>
-										</td>
-									</tr>
-								
-								<tr>
-									<td>
-										<label>Имя: </label>
-									</td>
-									<td>
-										<input type="text" class="fio" placeholder="Иван">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label>Отчество: </label>
-									</td>
-									<td>
-										<input type="text" class="fio" placeholder="Иванович">
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<label>Ваш пол: </label>
-									</td>
-									<td>
-										<input type="radio" name="sex" value="0"> Мужской <br>
-										<input type="radio" name="sex" value="1"> Женский <br>
-										<input type="radio" name="sex" value="2"> Не определен
-									</td>
-								</tr>
-								<tr>
-									<td colspan="2" class="btn">
-										<input type="submit" value="Зарегистрироваться">
-										<input type="reset" value="Очистить форму">
-									</td>
-								</tr>
-							
-							</table>
-						</fieldset>
-					</form>
-					
-				</div>
-				
-			</div>
-		</div>
-		
-		<div class="wrap-footer">
-			<div class="wrap-content footer">
-				<p>&#169; Copyright</p>
-			</div>
-		</div>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Business Solution</title>
+</head>
+<body>
+    <div id="header">
+        <div class="in-div">
+            <div class="container">
+                come text <a href="#">some a</a>
+            </div>
+        </div>
+    </div>
 
-	</body>
+    <div id="wrapper">
+        <div class="wrap container">
+            <div class="logo-info">
+                <div class="logo-text">Our Company</div>
+            </div>
+            <div class="main-menu">
+                <div class="menu">
+                    <a href="" class="menu-item selected">home</a>
+                    <a href="" class="menu-item">about us</a>
+                    <a href="" class="menu-item">services</a>
+                    <a href="" class="menu-item">email</a>
+                    <a href="" class="menu-item">support</a>
+                    <a href="" class="menu-item">contacts</a>
+                </div>
+                <div class="search">
+                    <input class="search-input" type="text" placeholder="search">
+                    <div class="search-go"></div>
+                </div>
+            </div>
+            <div class="slider">image</div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
 </html>
