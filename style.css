@@ -1,12 +1,15 @@
 @font-face {
-    font-family: avangardm;
-    src: url("fonts/AVGARDM.TTF"); /* тонкий */
-    font-family: avangardd;
-    src: url("fonts/AVGARDD.TTF"); /* жирный */
-    font-family: BAUBODB;
+    font-family: avangard midle;
+    src: url("fonts/AVGARDM.TTF");
+    /*font-family: BAUBODB;
     src: url("fonts/BAUBODB.TTF"); /* жирный */
-    font-family: BAUBODK;
+    /*font-family: BAUBODK;
     src: url("fonts/BAUBODK.TTF"); /* тонкий */
+}
+
+@font-face {
+    font-family: avangard bold;
+    src: url("fonts/AVGARDD.TTF");
 }
 
 html,
@@ -31,18 +34,23 @@ html {
     top:0;
     left:0;
     background: #ffffff;
-    color: #ebeaea;
 }
 
-#header a {
-    text-decoration: none;
-    color: #04a0f0;
-}
-
-.in-div {
+#header .in-div {
     height:22px;
     background: #2f2f2f ;
     border-bottom: 2px solid #000;
+
+}
+
+.in-div {
+    color: #ebeaea;
+    font-size: 15px;
+}
+
+.in-div a.phone {
+    text-decoration: none;
+    color: #04a0f0;
 }
 
 #wrapper {
@@ -57,7 +65,12 @@ html {
     height: 140px;
     width: 100%;
     margin-top: -140px;
-    background: darkgreen;
+    background: #009fff;
+}
+
+#footer .in-div{
+    height: 136px;
+    background: #191919;
 }
 
 .wrap.container {
@@ -70,6 +83,8 @@ html {
     margin: 0 auto;
 }
 
+
+
 .logo-info {
     height: 70px;
 }
@@ -78,7 +93,7 @@ html {
     padding-top: 14px;
     font-size: 31.25px;
     color: #181818;
-    font-family: avangardm, "Open Sans";
+    font-family: "avangard midle", sans-serif;
 }
 
 .main-menu {
@@ -103,6 +118,7 @@ a.menu-item {
     text-transform: uppercase;
     text-decoration: none;
     border-right: 1px solid #c7c9c8;
+    border-left: 1px solid transparent;
     margin: 0px 4px;
     padding: 8px 14px;
 }
@@ -111,7 +127,7 @@ a.menu-item:last-child {
     border-right: 1px solid transparent;
 }
 
-a.menu-item.selected {
+a.menu-item.selected, a.menu-item:hover {
     color: #ffffff;
     background: #3baede;
     border: 1px solid #005796;
@@ -130,17 +146,181 @@ a.menu-item.selected {
     border-radius: 14px;
     border: 1px solid #d5d6d5;
     padding: 3px 30px 2px 10px;
-    height: 19px;
+    height: 18px;
 }
 
+
+
 .search-go{
-    height:23px;
-    width:23px;
-    border: 1px solid #005796;
-    background: #3baede;
+    height:24px;
+    width:24px;
+    background: #3baede url("img/search-arrow.png") no-repeat;
     border-radius: 50%;
     position: absolute;
     top: 0;
     right: 0;
     cursor: pointer;
+}
+
+.wrap-content {
+    width: 780px;
+    margin: 0 auto;
+}
+
+.slider {
+    margin: 20px 0 0;
+    position: relative;
+}
+
+.slider-check {
+    position: absolute;
+    bottom: 10px;
+    left: 190px;
+}
+
+
+.sl-item {
+    height: 11px;
+    width: 11px;
+    border: 1px solid #1d526b;
+    background: #84d2e9;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sl-item.checked {
+    background: #2b2a2a;
+    border-color: #92cce8;
+}
+
+.content {
+    background: #fff;
+    border-radius: 30px;
+}
+
+.navigation {
+    padding: 12px;
+}
+
+.nav-item {
+    display: inline-block;
+    background: rgba(0,0,0,0.25) url("img/nav-item-fon.png");
+    border-radius: 8px;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 185px;
+}
+
+a.button {
+    color: #000;
+    font-size: 12.5px;
+    padding: 7px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+a.button.grey {
+    background: #f6f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6f6f6 20%, #c5c5c5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f6f6f6 20%,#c5c5c5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f6f6f6 20%,#c5c5c5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#c5c5c5',GradientType=0 ); /* IE6-9 */
+    border: 1px solid rgba(0,0,0,0.25);
+}
+
+
+a.button.grey:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5c5c5+0,f6f6f6+80 */
+    background: #c5c5c5; /* Old browsers */
+    background: -moz-linear-gradient(top,  #c5c5c5 0%, #f6f6f6 80%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #c5c5c5 0%,#f6f6f6 80%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #c5c5c5 0%,#f6f6f6 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5c5c5', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+
+}
+
+.nav-descr {
+    font-size:  10.42px;
+    color: #525050;
+}
+
+.nav-descr ul {
+    padding: 8px 10px 7px 23px;
+    text-align: left;
+}
+
+.nav-descr ul li {
+    line-height: 18px;
+}
+
+.nav-zag-text {
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17px;
+    font-family: "avangard bold", sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-zag-text span:first-child {
+    color: #525050;
+}
+
+.nav-zag-img {
+    height: 54px;
+    width: 62px;
+    background-image: url("img/nav-icons.png");
+    background-repeat: no-repeat;
+    margin: 1px auto;
+}
+
+.nav-zag-img.support {
+    background-position: 0px 0px;
+}
+.nav-zag-img.ideas {
+    background-position: -63px 0px;
+}
+.nav-zag-img.service {
+    background-position: -126px 0px;
+}
+.nav-zag-img.research {
+    background-position: -191px 0px;
+}
+
+
+.sidebar, .article {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 11px;
+}
+
+.sidebar h2 {
+    margin-left: 11px;
+}
+.sidebar ul {
+    padding: 0;
+    margin-left: 24px;
+}
+
+ul.side-nav {
+
+}
+
+ul.side-nav li {
+    line-height: 24px;
+    text-align: justify;
+    color:  #2888db;
+    font-size: 10.42px;
+    font-weight: 400;
+}
+
+ul.side-nav a {
+    color:  #2888db;
+
+}
+
+.article {
+
 }
