@@ -87,6 +87,7 @@ a.button, button, input[type="submit"] {
 
 #header .in-div .container {
     text-align: right;
+    padding-right: 32px;
 }
 
 
@@ -221,6 +222,11 @@ a.menu-item.selected, a.menu-item:hover, .article-item a.button {
     top: 0;
     right: 0;
     cursor: pointer;
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.search-go:hover {
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.5);
 }
 
 .wrap-content {
@@ -503,7 +509,16 @@ ul.side-nav a {
     line-height: 22px;
     font-size: 11px;
     font-weight: 400;
+}
 
+.footer-cols ul li > a {
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-cols ul li > a:hover {
+    text-decoration: underline;
 }
 
 .footer-cols .social {
@@ -511,52 +526,37 @@ ul.side-nav a {
     text-align: right;
 }
 
-.footer-cols .social a.social > div {
+.footer-cols .social > * {
     height: 23px;
     width: 23px;
+    display: inline-block;
+}
+
+.footer-cols .social .social a {
     background: url("img/social.png") no-repeat;
-    display: inline-block;
 }
 
-.social div.social {
-    padding: 2px 0 0 0;
-    margin-right: 4px;
-    display: inline-block;
+.footer-cols .social .social a:hover {
+    -webkit-transform: rotate(23deg);
+    -moz-transform: rotate(23deg);
+    -ms-transform: rotate(23deg);
+    -o-transform: rotate(23deg);
+    transform: rotate(-23deg);
 }
 
-.social a.twitter {
-    padding: 0px 12px 10px;
-    background: url("img/social.png") no-repeat 0 0;
-}
-
-.social a.someone {
-    padding: 0px 12px 10px;
-    background: url("img/social.png") no-repeat -24px 0;
-}
-
-.social a.facebook {
-    padding: 0px 12px 10px;
-    background: url("img/social.png") no-repeat -49px 0;
-}
-
-.social a.rss {
-    padding: 0px 12px 10px;
-    background: url("img/social.png") no-repeat -72px 0;
-}
-
-.footer-cols .social a.social.twitter > div {
+.footer-cols .social .social a.twitter {
     background-position: 0 0;
 }
 
-.footer-cols .social a.social.someone > div {
+.footer-cols .social .social a.someone {
     background-position: -24px 0;
 }
 
-.footer-cols .social a.social.facebook > div {
+.footer-cols .social .social a.facebook {
     background-position: -49px 0;
 }
 
-.footer-cols .social a.social.rss > div {
+.footer-cols .social .social a.rss {
     background-position: -72px 0;
 }
 
